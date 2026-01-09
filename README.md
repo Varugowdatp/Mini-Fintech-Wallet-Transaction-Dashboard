@@ -92,6 +92,16 @@ The application follows a component-based architecture with clear separation of 
 
 This architecture improves maintainability, testability, and scalability while keeping the application simple and aligned with assignment scope.
 
+## Mock API Data
+
+This project uses a mock API layer implemented in `src/services/api.js`.
+
+Initial mock data (wallet balance and transactions) is seeded programmatically
+into localStorage on the first application run. The API layer simulates
+asynchronous CRUD operations, network delays, pending states, and failure
+scenarios without using a real backend.
+
+To reset mock data, clear browser localStorage and reload the application.
 
 
 ##  Testing
