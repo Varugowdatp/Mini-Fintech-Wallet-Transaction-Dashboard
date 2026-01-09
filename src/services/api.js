@@ -68,7 +68,7 @@ export const getUsers = async () => {
   }));
 };
 
-// ================= TRANSACTIONS =================
+
 export const getTransactions = async () => {
   await delay(500);
   const data = localStorage.getItem(STORAGE_KEYS.TRANSACTIONS);
@@ -104,7 +104,7 @@ export const createTransaction = async (transaction) => {
   return newTransaction;
 };
 
-// ✅ PATCH /transactions/:id (STATUS UPDATE)
+ 
 export const updateTransactionStatus = async (id, status, failureReason) => {
   await delay(500);
 
@@ -148,8 +148,7 @@ export const updateTransactionStatus = async (id, status, failureReason) => {
 
   return transaction;
 };
-
-// ================= DELETE (SOFT) =================
+ 
 export const deleteTransaction = async (id) => {
   await delay(500);
 

@@ -24,7 +24,7 @@ function TransferModal({ isOpen, onClose, onSubmit, isLoading, balance }) {
 
   const selectedUser = users.find((u) => u.id === recipientId);
 
-  // ✅ Continue should NOT block for insufficient balance
+   
   const handleContinue = (e) => {
     e.preventDefault();
 

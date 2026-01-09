@@ -1,4 +1,3 @@
-// Wallet configuration
 export const WALLET_CONFIG = {
   FEE_PERCENTAGE: 2,
   TRANSACTION_LIMIT: 10000,
