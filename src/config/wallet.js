@@ -1,0 +1,8 @@
+// Wallet configuration
+export const WALLET_CONFIG = {
+  FEE_PERCENTAGE: 2,
+  TRANSACTION_LIMIT: 10000,
+  MIN_AMOUNT: 1,
+  CURRENCY: "$",
+  RECENT_TRANSACTIONS_COUNT: 10,
+};
