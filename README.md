@@ -94,7 +94,7 @@ This architecture improves maintainability, testability, and scalability while k
 
 
 
-## 🧪 Testing
+##  Testing
 
 Tests are implemented using **Vitest** and **@testing-library/react**.
 
