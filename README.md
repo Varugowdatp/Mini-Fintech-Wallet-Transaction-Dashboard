@@ -1,5 +1,5 @@
 
-````md
+
 # Mini Wallet Hub
 
 A React-based wallet management application that demonstrates transaction lifecycle handling, balance management, filtering, error handling, and testing using a mock API.
@@ -169,4 +169,4 @@ npm run dev
  
 
  
-"# Mini-Fintech-Wallet-Transaction-Dashboard" 
+
