@@ -6,7 +6,7 @@ A React-based wallet management application that demonstrates transaction lifecy
 
 ---
 
-## 🚀 Features
+## Features
 
 ### Wallet
 - View current wallet balance
@@ -31,7 +31,7 @@ A React-based wallet management application that demonstrates transaction lifecy
 
 ---
 
-## 🧠 UX & Error Handling
+##  UX & Error Handling
 
 - Toast notifications for user feedback
 - Inline form validation
@@ -40,7 +40,7 @@ A React-based wallet management application that demonstrates transaction lifecy
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - React (Vite)
 - Tailwind CSS
@@ -49,7 +49,7 @@ A React-based wallet management application that demonstrates transaction lifecy
 
 ---
 
-## 🔁 API Design (Mock)
+##  API Design (Mock)
 
 The application follows REST-style behavior using a simulated API.
 
@@ -64,7 +64,7 @@ The application follows REST-style behavior using a simulated API.
 Transactions are created in a **pending** state and later updated to **success** or **failed**, simulating real-world payment processing.
 
 ---
-## 🏗️ Architectural Notes
+##  Architectural Notes
 
 The application follows a component-based architecture with clear separation of concerns.
 
@@ -111,7 +111,7 @@ npm test
 
 ---
 
-## 📂 Project Structure (Key Files)
+##  Project Structure (Key Files)
 
 ```
 src/
@@ -136,7 +136,7 @@ src/
 
 ---
 
-## ⚠️ Assumptions
+##  Assumptions
 
 * The assignment allows a mock backend; therefore LocalStorage is used instead of a real server.
 * Network latency and asynchronous behavior are simulated using artificial delays.
@@ -148,7 +148,7 @@ src/
 * Currency is assumed to be a single configurable currency defined in application configuration.
 
 ---
-## 🚧 Limitations
+##  Limitations
 
 - Uses LocalStorage, so data is browser-specific and non-persistent.
 - No real payment gateway or backend server integration.
@@ -157,7 +157,7 @@ src/
 - Application state resets when browser storage is cleared.
 
 
-## ▶️ Setup & Run
+##  Setup & Run
 
 ```bash
 npm install
