@@ -47,7 +47,7 @@ function TransferModal({ isOpen, onClose, onSubmit, isLoading, balance }) {
       return;
     }
 
-    // ❗ DO NOT block on insufficient balance
+    
     setStep(2);
   };
 
@@ -105,7 +105,7 @@ function TransferModal({ isOpen, onClose, onSubmit, isLoading, balance }) {
 
                 setAmount(value);
 
-                // ✅ REAL-TIME insufficient balance warning
+                
                 if (!isNaN(n) && n > 0 && n + n * (WALLET_CONFIG.FEE_PERCENTAGE / 100) > balance) {
                   setError("Insufficient balance");
                 } else {
