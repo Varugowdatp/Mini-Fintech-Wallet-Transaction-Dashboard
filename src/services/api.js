@@ -8,41 +8,135 @@ const STORAGE_KEYS = {
  
 const initializeMockData = () => {
   if (!localStorage.getItem(STORAGE_KEYS.TRANSACTIONS)) {
+    const now = Date.now();
+
     const mockTransactions = [
       {
-        id: "mock-success-1",
+        id: "tx-1",
         type: "credit",
-        amount: 5000,
+        amount: 8000,
         description: "Initial deposit",
         status: "success",
-        createdAt: new Date(Date.now() - 86400000 * 5).toISOString(),
+        createdAt: new Date(now - 86400000 * 10).toISOString(),
       },
       {
-        id: "mock-success-2",
+        id: "tx-2",
         type: "debit",
-        amount: 500,
-        description: "Transfer to John Doe",
+        amount: 1200,
+        description: "Transfer to Leanne Graham",
         status: "success",
-        recipient: "John Doe",
-        createdAt: new Date(Date.now() - 86400000 * 3).toISOString(),
+        recipient: "Leanne Graham",
+        createdAt: new Date(now - 86400000 * 9).toISOString(),
       },
       {
-        id: "mock-pending-1",
+        id: "tx-3",
+        type: "fee",
+        amount: 24,
+        description: "Transfer fee",
+        status: "success",
+        createdAt: new Date(now - 86400000 * 9).toISOString(),
+      },
+      {
+        id: "tx-4",
+        type: "debit",
+        amount: 2000,
+        description: "Transfer to Ervin Howell",
+        status: "success",
+        recipient: "Ervin Howell",
+        createdAt: new Date(now - 86400000 * 8).toISOString(),
+      },
+      {
+        id: "tx-5",
+        type: "fee",
+        amount: 40,
+        description: "Transfer fee",
+        status: "success",
+        createdAt: new Date(now - 86400000 * 8).toISOString(),
+      },
+      {
+        id: "tx-6",
         type: "credit",
-        amount: 1200,
+        amount: 1500,
         description: "Adding money",
         status: "pending",
-        createdAt: new Date(Date.now() - 86400000).toISOString(),
+        createdAt: new Date(now - 86400000 * 7).toISOString(),
       },
       {
-        id: "mock-failed-1",
+        id: "tx-7",
         type: "debit",
         amount: 3000,
-        description: "Transfer to Jane Smith",
+        description: "Transfer to Clementine Bauch",
         status: "failed",
-        recipient: "Jane Smith",
+        recipient: "Clementine Bauch",
         failureReason: "Insufficient balance",
-        createdAt: new Date(Date.now() - 3600000).toISOString(),
+        createdAt: new Date(now - 86400000 * 6).toISOString(),
+      },
+      {
+        id: "tx-8",
+        type: "credit",
+        amount: 2500,
+        description: "Adding money",
+        status: "success",
+        createdAt: new Date(now - 86400000 * 5).toISOString(),
+      },
+      {
+        id: "tx-9",
+        type: "debit",
+        amount: 1000,
+        description: "Transfer to Patricia Lebsack",
+        status: "success",
+        recipient: "Patricia Lebsack",
+        createdAt: new Date(now - 86400000 * 4).toISOString(),
+      },
+      {
+        id: "tx-10",
+        type: "fee",
+        amount: 20,
+        description: "Transfer fee",
+        status: "success",
+        createdAt: new Date(now - 86400000 * 4).toISOString(),
+      },
+      {
+        id: "tx-11",
+        type: "debit",
+        amount: 700,
+        description: "Transfer to Chelsey Dietrich",
+        status: "success",
+        recipient: "Chelsey Dietrich",
+        createdAt: new Date(now - 86400000 * 3).toISOString(),
+      },
+      {
+        id: "tx-12",
+        type: "fee",
+        amount: 14,
+        description: "Transfer fee",
+        status: "success",
+        createdAt: new Date(now - 86400000 * 3).toISOString(),
+      },
+      {
+        id: "tx-13",
+        type: "debit",
+        amount: 1800,
+        description: "Transfer to Mrs. Dennis Schulist",
+        status: "success",
+        recipient: "Mrs. Dennis Schulist",
+        createdAt: new Date(now - 86400000 * 2).toISOString(),
+      },
+      {
+        id: "tx-14",
+        type: "fee",
+        amount: 36,
+        description: "Transfer fee",
+        status: "success",
+        createdAt: new Date(now - 86400000 * 2).toISOString(),
+      },
+      {
+        id: "tx-15",
+        type: "credit",
+        amount: 1000,
+        description: "Adding money",
+        status: "pending",
+        createdAt: new Date(now - 86400000).toISOString(),
       },
     ];
 
@@ -50,7 +144,9 @@ const initializeMockData = () => {
       STORAGE_KEYS.TRANSACTIONS,
       JSON.stringify(mockTransactions)
     );
-    localStorage.setItem(STORAGE_KEYS.BALANCE, "6490");
+
+     
+    localStorage.setItem(STORAGE_KEYS.BALANCE, "4666");
   }
 };
 
